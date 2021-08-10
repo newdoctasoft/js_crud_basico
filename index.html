@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+       EJERCICIO EXAMEN PRODUCTOS
+</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+ 
+	<h1><center>TIENDA DE PRODUCTOS</center></h1>
+	<hr>
+			<div class="employee-form">
+           
+				  <form onsubmit="event.preventDefault();enviar();" autocomplete="off">
+                    <div>
+                        <label>CODIGO</label><label class="validation-error hide" id="validarCodigo">CAMPO REQUERIDO.</label>
+                        <input type="text" name="codigo" id="codigo">
+                    </div>
+                    <div>
+                        <label>DESCRIPCION</label>
+                        <input type="text" name="descripcion" id="descripcion">
+                    </div>
+                    <div>
+                        <label>PRECIO</label>
+                        <input type="text" name="precio" id="precio">
+                    </div>
+                   
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="ENVIAR">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "tabla-productos">
+                <table class="list" id="listadoProductos">
+                    <thead>
+                        <tr>
+                            <th>CODIGO</th>
+                            <th>DESCRIPCION</th>
+                            <th>PRECIO</th> 
+                            <th>ACCIONES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="scriptMetodos.js"></script>
+	 
+	 
+</body>
+</html>
